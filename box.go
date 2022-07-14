@@ -98,7 +98,7 @@ func (b *box) RemoveAllCircles() error {
 	for _, shape := range b.shapes {
 		switch shape.(type) {
 		case Circle:
-			continue
+			break
 		default:
 			newShapes = append(newShapes, shape)
 		}
